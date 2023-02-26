@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 
-# IMDB top 10 movies
+# IMDB top 10 movies and Star Wars movies chronologically
 
 # my_tuple argument's elements should be in "Title Year Rating" format
 def list_movies(my_tuple):
