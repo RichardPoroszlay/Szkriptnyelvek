@@ -5,8 +5,8 @@ def szamlalo(start, end):
     szamok = list(range(start, end+1))
     negyzetosszeg = sum([szam*szam for szam in szamok])
     osszeg_negyzet = sum(szamok)**2
-
-    return "Result: " + osszeg_negyzet - negyzetosszeg
+    result = str(osszeg_negyzet - negyzetosszeg)
+    return "Result: " + result
 
 
 def main():
