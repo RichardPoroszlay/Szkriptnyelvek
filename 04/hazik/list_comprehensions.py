@@ -94,6 +94,42 @@ def ex_10():
 def ex_11():
     print("\nELEVENTH EXERCISE\n")
     result = [num*num for num in range(0,19+1) if num*num % 2 == 0]
+    to_string = [str(e) for e in result]
+    result = [e for e in to_string if e[-1] == '4']
+    print(result)
+
+
+def ex_12():
+    print("\nTWELFTH EXERCISE\n")
+    nums = [num*num for num in range(0,19+1)]
+    print(nums)
+
+
+def ex_13():
+    print("\nTHIRTEENTH EXERCISE\n")
+    letters = [chr(l) for l in range(65, 90+1)]
+    result = "".join(letters)
+    print(letters, end="")
+    print(" --> ", end="")
+    print(result)
+
+
+def ex_14():
+    print("\nFOURTEENTH EXERCISE\n")
+    elements = [' apple ', ' banana ', ' kiwi']
+    result = [element.strip() for element in elements]
+    print(elements, end="")
+    print(" --> ", end="")
+    print(result)
+
+
+def ex_15():
+    print("\nFIFTEENTH EXERCISE\n")
+    nums = [1, 0, 1, 1, 0, 1, 0, 0]
+    to_string = [str(n) for n in nums]
+    result = "".join(to_string)
+    print(nums, end="")
+    print(" --> ", end="")
     print(result)
 
 
@@ -119,6 +155,14 @@ def main():
     ex_10()
     print('\n', '-' * 80)
     ex_11()
+    print('\n', '-' * 80)
+    ex_12()
+    print('\n', '-' * 80)
+    ex_13()
+    print('\n', '-' * 80)
+    ex_14()
+    print('\n', '-' * 80)
+    ex_15()
     print('\n', '-' * 80)
 
 
