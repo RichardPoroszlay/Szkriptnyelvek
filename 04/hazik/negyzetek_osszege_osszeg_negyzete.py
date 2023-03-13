@@ -6,11 +6,11 @@ def szamlalo(start, end):
     negyzetosszeg = sum([szam*szam for szam in szamok])
     osszeg_negyzet = sum(szamok)**2
 
-    return osszeg_negyzet - negyzetosszeg
+    return "Result: " + osszeg_negyzet - negyzetosszeg
 
 
 def main():
-    print(szamlalo(1,100))
+    print(szamlalo(1,100)) # 25164150
 
 
 if __name__ == "__main__":
