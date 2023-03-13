@@ -33,6 +33,8 @@ def main():
     print(diamond_drawer(2))
     print(diamond_drawer(12))
     print(diamond_drawer(0))
+    print(diamond_drawer(-32))
+    print(diamond_drawer(-3))
 
 
 if __name__ == "__main__":
