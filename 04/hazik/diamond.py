@@ -4,8 +4,10 @@
 # the parameter must be an odd number
 def diamond_drawer(height):
 
-    if height % 2 == 0:
-        return "Number of height isn't odd!"
+    if height < 0:
+        return "Number can't be less than zero!"
+    elif height % 2 == 0:
+        return "Number of height isn't odd! It's wrong!"
     result = ""
     counter_inc = 1
     while counter_inc <= height:
