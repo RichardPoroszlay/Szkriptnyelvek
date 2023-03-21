@@ -18,7 +18,7 @@ def valid(text, chars="ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"):
     for c in text:
         if c in chars:
             result += c
-    return result
+    return f"{text} --> {result}" 
 
 
 def main():
