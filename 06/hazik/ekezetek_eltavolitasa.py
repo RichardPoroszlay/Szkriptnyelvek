@@ -1,7 +1,7 @@
 #/usr/bin/env python3
 
 """
-Ebben a programban egy szöveget fogunk lekezelni: az ékezetes karakterekből
+Ebben a programban egy szöveget fogunk lekezelni: az ékezetes karaktereket
 ékezet nélküli karakterekre fogjuk lecserélni.
 """
 
