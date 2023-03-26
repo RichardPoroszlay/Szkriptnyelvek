@@ -69,13 +69,26 @@ looking as fierce as a commander."""
 
 
 def word_counter(text):
+    """
+    Dictionary adatszerkezet segítségével megszámoljuk egy inputként kapott szövegben,
+    hogy melyik szó hányszor szerepel a szövegben.
+    A függvény minden szót kisbetűsként kezel.
+    A függvény kiszedi a szövegből a szótár szempontjából felesleges írásjeleket.
+    """
+    punctuations = '-"_;,!.?'
     words = text.lower().split()
     d = {}
     for word in words:
+        for c in word:
+            if c in punctuations:
+                word = word.replace(c, '')
         if word not in d:
             d[word] = 1
         else:
             d[word] += 1
+
+    for k in sorted(d.keys()):
+        print(k, d[k])
 
 
 def main():
