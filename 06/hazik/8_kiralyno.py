@@ -61,8 +61,6 @@ def eigth_queens(positions):
     for row in table:
         print(" ".join(row), end="\n")
 
-    
-
 
 def main():
     positions = [0, 4, 7, 5, 2, 6, 1, 3]
