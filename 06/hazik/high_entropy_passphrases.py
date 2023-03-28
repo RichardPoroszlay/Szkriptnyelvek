@@ -12,6 +12,7 @@ def passphrase_verifier():
     A függvény egy szöveges fileból olvassa be a sorokat.
     Ezeket a sorokat aztán összehasonlítjuk azok halmazbeli megfelelőjével.
     Ha a sor és a halmaz hossza megegyezik, akkor hiteles a passphrase.
+    A függvény a correct passphrasek számát adja vissza egy input fileból.
     """
     lines =  []
     with open("/home/richardpal/Desktop/passphrases.txt", "r") as f:
