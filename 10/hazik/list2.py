@@ -29,6 +29,6 @@ Kimenet: egy összefésült lista, melyben az elemek rendezve szerepelnek.
 def list_merge(
     list1: list[str] | list[int] | list[float],
     list2: list[str] | list[int] | list[float],
-):
+) -> list[str] | list[int] | list[float]:
     ordered_list = sorted(list1 + list2)
     return ordered_list
