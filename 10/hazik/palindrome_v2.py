@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 
 
-def is_palindrome_iterative(word):
+def is_palindrome_iterative(word: str) -> bool:
     mid_point = len(word) // 2
     for i in range(0, mid_point):
         left_side = word[i]
@@ -11,7 +11,7 @@ def is_palindrome_iterative(word):
     return True
 
 
-def is_palindrome_recursive(word):
+def is_palindrome_recursive(word: str) -> bool:
     if len(word) < 2:
         return True
     first_letter = word[0]
